@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ListaProjeto_style.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="Furão da Neve.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <title>Ferret</title>
+</head>
+<body>
+    <input type="checkbox" name="check" id="check" checked>
+    <label for="check" id="check"><i class="fa-solid fa-bars"></i></label>
+    <div class="sidebar">
+        <center>
+            <img src="Furão da Neve.jpg" class="image" alt="">
+            <h2>Usuário</h2>
+        </center>
+        <a href="TelaPrincipal.html"><i class="fa-solid fa-house"></i><span>Início</span></a>
+        <a href="chat.html"><i class="fa-solid fa-comments"></i><span>Chat</span></a>
+        <a href="#" class="exitBottom"><i class="fa-solid fa-bell"></i><span>Notificação</span></a>
+        <a href="perfilusuario.html"><i class="fa-solid fa-user"></i><span> Perfil</span></a>
+        <a href="Projeto.html"> <i class="fa-solid fa-file-signature"></i><span>Projeto</span>
+        <a href="ListaProjeto.html"><i class="fa-solid fa-rectangle-list"></i><span>Lista de projeto</span></a>
+        <a href="SobreNos.html"><i class="fa-solid fa-user-group"></i><span>Sobre nós</span></a>
+        <a class="exitBottom"><i class="fa-solid fa-door-open"></i><span>Sair</span></a>
+    </div>
+    <header>
+
+        <h1>Lista de projetos</h1>
+        <form action="#" method="post" id="busca">
+            <input type="text" name="pesquisar" id="pesquisar" placeholder="Faça sua busca">
+            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+    </header>
+
+<br><br>
+    <div class="d-flex">
+        <input type="checkbox" id="checkbox1"  />
+        <label for="checkbox1"><b>Administração</b></label>
+    </div>&nbsp;
+    <div class="d-flex">
+        <input type="checkbox" id="checkbox2" />
+        <label for="checkbox2"><b>Design</b></label>
+    </div>&nbsp;
+    <div class="d-flex">
+        <input type="checkbox" id="checkbox3" />
+        <label for="checkbox3"><b>Games</b></label>
+    </div>&nbsp; <br><br><br>
+
+    <div class="d-flex">
+        <input type="checkbox" id="checkbox4" />
+        <label for="checkbox4"><b>Marketing</b></label>
+    </div>&nbsp;
+    <div class="d-flex">
+        <input type="checkbox" id="checkbox5" />
+        <label for="checkbox5"><b>Música</b></label>
+    </div>&nbsp;
+    <div class="d-flex">
+        <input type="checkbox" id="checkbox6" />
+        <label for="checkbox6"><b>Programação</b></label>
+    </div>&nbsp; <br><br><br>
+    <div class="d-flex">
+        <input type="checkbox" id="checkbox7" />
+        <label for="checkbox7"><b>Vendas</b></label>
+    </div>&nbsp;
+    <div class="d-flex">
+        <input type="checkbox" id="checkbox8" />
+        <label for="checkbox8"><b>RH</b></label>
+    </div>&nbsp;
+    <div class="d-flex">
+        <input type="checkbox" id="checkbox9" />
+        <label for="checkbox9"><b>Outros</b></label>
+    </div>
+
+    <br><br><br>
+
+    <div class="lista">
+        <div class="membro-equipe">
+            <p class="nome"><b>Bird-game</b></p> <br><br>
+            <img src="bird-game.jpg" alt="ícone" height="110" width="100">
+              <br><br>
+              <p class="categ">&nbsp;<b>Categoria: Games</b></p><br>
+              <form action="">
+            <button class="conv">Enviar convite</button> <button class="conv" id="visu">Visualizar projeto</button> <br><br>
+        </form>
+            </div><br><br>
+
+            <div class="membro-equipe">
+                <p class="nome"><b>Banda beneficente</b></p> <br><br>
+                <img src="guitar.jpg" alt="ícone" height="110" width="100">
+                  <br><br>
+                  <p class="categ">&nbsp;<b>Categoria: Música</b></p><br>
+                  <form action="">
+                <button class="conv">Enviar convite</button> <button class="conv" id="visu">Visualizar projeto</button> <br><br>
+            </form>
+                </div>
+        <br><br>
+    </div>
+
+</body>
+</html>

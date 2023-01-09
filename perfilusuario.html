@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="perfilstyle.css" rel="stylesheet" />
+  <link href="cadastro.js" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="Furão da Neve.jpg" type="image/x-icon">
+  <title>Ferret</title>
+</head>
+<body>
+  <input type="checkbox" name="check" id="check" checked>
+    <label for="check" id="check"><i class="fa-solid fa-bars"></i></label>
+    <div class="sidebar">
+        <center>
+            <img src="Furão da Neve.jpg" class="image" alt="">
+            <h2>Usuário</h2>
+        </center>
+        <a href="TelaPrincipal.html"><i class="fa-solid fa-house"></i><span>Início</span></a>
+        <a href="chat.html"><i class="fa-solid fa-comments"></i><span>Chat</span></a>
+        <a href="#" class="exitBottom"><i class="fa-solid fa-bell"></i><span>Notificação</span></a>
+        <a href="perfilusuario.html"><i class="fa-solid fa-user"></i><span> Perfil</span></a>
+        <a href="Projeto.html"> <i class="fa-solid fa-file-signature"></i><span>Projeto</span>
+        <a href="ListaProjeto.html"><i class="fa-solid fa-rectangle-list"></i><span>Lista de projeto</span></a>
+        <a href="SobreNos.html"><i class="fa-solid fa-user-group"></i><span>Sobre nós</span></a>
+        <a class="exitBottom"><i class="fa-solid fa-door-open"></i><span>Sair</span></a>
+    </div>
+
+  <div class="fotoFundo">
+    <i></i>
+  </div>
+
+  <header>    
+    <img src="Furão da Neve.jpg" alt="imagem de perfil">   
+    <p class="nomeUsuario"><b>Nome</b> <img src="rankatual.png" alt="rank"></p>
+    <p class="arroba">@NomeDoUsuario</p>  
+    <p id="seguidores">Seguidores: 0</p>
+    <p id="seguindo">Seguindo: 0</p>
+
+<form action="#">
+   <a href="#abrirModal" class="editarPerfil">Editar perfil</a> 
+    <div id="abrirModal" class="modal">
+      <div id="moda">
+      <a href="#fechar" title="Fechar" class="fechar">x</a>
+      <div id="imgEditarPerfil">
+      <img src="Furão da Neve.jpg" alt="foto de perfil" style="height: 13vh;">
+    </div>
+      <label for="altFoto"><p id="pAltFoto">Alterar foto de perfil</p></label>
+      <input type="file" name="altFoto" id="altFoto"><br>
+      <label for="altFotoFundo"><p id="pAltFotoFundo">Alterar banner</p></label>
+      <input type="file" name="altFotoFundo" id="altFotoFundo"><br><br>
+      
+    
+     <label for="altNome">Nome&nbsp;&nbsp;<input type="text" class='alteracao' name="altNome" id="altNome"></label><br><br>
+     <label for="altNomeUsuario">Nome de usuário&nbsp;&nbsp;<input type="text" class='alteracao' name="altNomeUsuario" id="altNomeUsuario"></label><br><br>
+     <label for="altBio"><p class="bio">Biografia</p></label><textarea name="altBio" id="altBio" class='alteracao' cols="30" rows="7"></textarea><br><br>
+     <label for="altEmail">Email&nbsp;&nbsp;<input type="email" name="altEmail" id="altEmail" class='alteracao'></label><br><br>
+     <label for="altSenha">Senha&nbsp;<input type="password" name="altSenha" id="altSenha" class='alteracao'></label><br><br>
+     <label for="altTelefone">Telefone&nbsp;&nbsp;<input type="tel" name="altTelefone" id="altTelefone" class='alteracao'></label><br><br><br>
+     <button type="submit" id="salvar">Salvar configurações</button>
+
+
+    </div>
+    </div>
+  </form>
+
+
+  </header>
+  <div class="projetoAtual">
+    <p id="meuProjeto">Meu projeto atual: nenhum no momento</p>   
+  </div><br><br>
+  <textarea name="bioUsuario" id="bioUsuario" cols="30" rows="10" disabled>Exemplo de biografia</textarea>
+
+  
+
+  <div class="postagem">
+    <strong>
+      <div id="user"><img src="Furão da Neve.jpg" alt="foto de perfil"><b class="nomeUser">Nome</b><br><div id="post"><i></i></div>   
+    </strong>
+  </div>
+  </div>
+
+
+
+
+
+</body>
+</html>

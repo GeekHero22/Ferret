@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="riiainciais.css" rel="stylesheet" />
+  <link href="cadastro.js" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="Furão da Neve.jpg" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <title>Ferret</title>
+</head>
+  <body>
+    <div id="logo">
+      <img src="Furão da Neve.jpg">
+    </div>
+    <div class="container">
+      <div class="box" id="recuperar">
+        <h2>Esqueci minha senha</h2><br>
+        <hr>
+        <form name="formCadastro" action="acao.html" onsubmit="return validarFormulario()"><br><br>
+        <p>Te enviaremos um código pelo email</p><br>
+        <i class="fa-solid fa-envelope"></i>&nbsp;&nbsp;<input type="email" name="email" required placeholder="Email"/> <br /><br /><br />
+        <input type="submit" name="botao" class="botaosenha" value="Enviar código ao email" />
+      </div>
+    </div>
+</form>
+    </body>
+
+</html>

@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+:root{
+    --bg-color-body: #2f1e65;
+    --txt-color: rgb(0, 0, 0);
+    --bg-color-caixa: #7a57db;
+    --border-color: white;
+    --bg-color-hover: #7a57db;
+    --bg-color-active: #6245b8;
+}
+
+body{
+    background-color: var(--bg-color-body);
+    color: var(--txt-color);
+}
+
+.membro{
+    text-align: left;
+    color: white;
+    font-size: 30px;
+    text-indent: 5px;
+}
+
+h2{
+    text-align: center;
+    font-size: 24px;
+    margin-top: -25px;
+    
+}
+
+.projeto{
+    background-color: var(--bg-color-caixa);
+}
+
+.imagem-projeto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+
+.membro-equipe {
+    background-color: #6c4ebd;
+    padding: 20px 8px 25px;
+}
+
+.membro-equipe img{
+    border-radius: 150px;
+    float: left;
+}
+
+.nome{
+    color: white;
+    text-indent: 10px;
+    margin-top: 7px;
+    padding: 2px;
+    display: flex;
+}
+
+.imagem-projeto img{
+    margin-top: 10px;
+    border-radius: 100px;
+}
+
+.image img{
+    float: right;
+    margin-right: 8%;
+
+}
+
+#adm{
+    color: rgb(243, 179, 61);
+}
+
+input[type="button"] {
+    padding: 13px 20px;
+    background-color: #6747d1;
+    color: white;
+    text-align: center;
+}
+
+
+#sair{
+    padding: 13px 33px;
+    background-color: #6747d1;
+    color: white;
+}
+
+.icon i {
+    position: absolute;
+}
+
+input[type="button"]:hover, #sair:hover {
+    background-color: var(--bg-color-hover);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+input[type="button"]:active, #sair:active {
+    background-color: var(--bg-color-active);
+    transition: 0.5s;
+    cursor: pointer;
+}

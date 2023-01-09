@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="GerenciarEquipe_style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="Furão da Neve.jpg" type="image/x-icon">
+    <title>Ferret</title>
+    <script src="GerenciarEquipe_script.js" defer></script>
+
+   
+
+</head>
+
+<body>
+    <div class="projeto">
+        <div class="imagem-projeto">
+            <img src="download.jpg" alt="ícone do projeto" height="100" width="110">
+            <label for='selecao'>&#187; Editar Foto<input id='selecao' type='file'></label>
+        </div><br><br>
+       
+        <div class="titulo">
+        <h2>Iluminadores</h2>
+        <button id="editar-texto">&#187; Editar texto</button>
+    </div>
+    </div>
+    <br><br><br>
+
+    <div class="gerenciar">
+        <h2 class="gerenciar-equipe" style="text-align: left;">Gerenciamento de equipe</h2><br>
+
+        
+
+    <div class="membro-equipe" id="adm">
+            <img src="sem-perfil.jpg" alt="ícone" height="80" width="70"><br>
+            <p class="nome" id="adm">Jacinto Rodrigues (você)</p>  
+            <p class="nome">Rank diamante</p>           
+            </div>
+    <br><br><br>
+
+    <h2 style="text-align: left;">Membros da sua equipe</h2><br>
+    <div class="membro-equipe">
+        <img src="sem-perfil.jpg" alt="ícone" height="70" width="60">  
+        <p class="nome">Afonso Anastácio</p>   
+        <p class="nome">Rank ouro</p>
+        <input type="button" value="Excluir membro" id="excluir"> 
+        </div>
+    <br>
+    
+        <div class="membro-equipe">
+            <img src="sem-perfil.jpg" alt="ícone" height="70" width="60">   
+            <p class="nome">Laurinda Rosa</p>   
+            <p class="nome">Rank prata</p> 
+            <input type="button" value="Excluir membro" id="excluir">
+            </div><br><br>
+    
+            <button id='btn-div'>Membros pendentes (1)</button>
+            <div id="container">
+                <img src="Furão da Neve.jpg" al="Foto de perfil do usuário" id="userFoto"><p id="pendenteUser" class="nome">Sócrates </p><br>
+                <p id="rank">Rank esmeralda</p>
+                <div class="botoes">
+                <input type="button" value="Aceitar" id="aceitar">
+                <input type="button" value="Recusar" id="recusar">
+                <input type="button" value="Visualizar perfil" id="visualizar">
+            </div>
+            </div>
+            
+           
+    </div>
+    <br>
+    
+    
+    
+    </div>
+    <br><br><br>
+
+    <input type="button" value="Adicionar membro">
+
+    &nbsp;&nbsp;
+    <input type="button" value="Desfazer equipe" id="sair">
+    
+</body>
+</html>
