@@ -4,64 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="TelaEquipe_style.css" type="text/css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="stylesheet" href="TelaEquipe_style.css" type="text/css">
     <link rel="shortcut icon" href="Furão da Neve.jpg" type="image/x-icon">
     <title>Ferret</title>
 </head>
 <body>
     <div class="projeto">
     <div class="imagem-projeto">
-        <a href="Projeto.html"><img src="bird-game.jpg" alt="ícone do projeto" height="120" width="115">  </a>     
+        <a href="Projeto.html"><img src="bird-game.jpg" class="img-fluid" alt="ícone do projeto" height="120" width="115">  </a>     
     </div><br>
-    <h2 style="color: #fff;">Bird-game</h2>
-</div>
-<br><br><br>
-
-<div class="membros">
-<h2 class="membro">Membros</h2><br>
-
-
-
-<div class="membro-equipe">
-<img src="sem-perfil.jpg" alt="ícone" height="70" width="60">   
-<p class="nome" id="adm">Guilherme Silva</p>   
-<p class="nome">Rank diamante</p> 
-</div>
-<br>
-
-<div class="membro-equipe">
-    <img src="sem-perfil.jpg" alt="ícone" height="70" width="60">   
-    <p class="nome">Henrique </p>   
-    <p class="nome">Rank ouro</p> 
-    </div>
-<br>
-
-    <div class="membro-equipe">
-        <img src="sem-perfil.jpg" alt="ícone" height="70" width="60">   
-        <p class="nome">Pedro</p>   
-        <p class="nome">Rank prata</p> 
-        </div>
-
-</div>
-<br>
-
-<div class="membro-equipe">
-    <img src="sem-perfil.jpg" alt="ícone" height="70" width="60">   
-    <p class="nome">Ana</p>   
-    <p class="nome">Rank bronze</p> 
-    </div>
-
+    <h2 style="color: #fff;" id="tituloProjeto">Bird-game</h2>
 </div>
 <br><br><br>
 
 
+<div class="membros container-fluid">
+    <ul class="list-group">
+        <h2>Membros</h2>
 
-
-
-
-<input type="button" value="Sair da equipe" id="sair">
-
+        <li class="list-group-item ">
+            <img src="Furão da Neve.jpg" class="fotoPerfil img-fluid" alt="Foto de perfil" height="70" width="65">
+            Guilherme Silva (Administrador)
+        </li><br>
+        <li class="list-group-item ">
+            <img src="Furão da Neve.jpg" class="fotoPerfil img-fluid" alt="Foto de perfil" height="70" width="65">
+            Lucas Ferreira
+            <button class="btn btn-primary float-end p-3 mt-1 btn-danger">Excluir</button>
+        </li><br>
+        
+      </ul>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
 
 </body>
 </html>
