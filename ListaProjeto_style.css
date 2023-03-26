@@ -7,9 +7,9 @@
 :root{
     --bg-color-body: #2f1e65;
     --txt-color: rgb(255, 255, 255);
-    --bg-color: #6747d1;
+    --bg-color: #5A4BB3;
     --border-color: whitesmoke;
-    --bg-color-hover: #742aa5;
+    --bg-color-hover: #b0a2ff;
     --bg-color-active: #6245b8;
     --checkbox-color: rgba(189, 91, 247, 0.651);
     --bg-color-nav: #6c4dcf;
@@ -33,15 +33,13 @@ body{
     margin-left: 10vh; 
 }
 
-.conv{
-    margin-left: 5px;
-    border: 2px solid black;
-}
+
 
 .membro-equipe {
     background-color: var(--bg-color);
     padding: 20px 8px 25px;
     width: 100%;
+    display: block;
 }
 
 .nome{
@@ -52,9 +50,12 @@ body{
 
 .categ{
     margin-top: -2vh;
-    font-size: 17.4px;}
+    font-size: 3vh;}
 
-h1{margin-left: 10vh;}
+h1{
+    margin-left: 11vh;
+    font-family: 'Inter', sans-serif;
+}
 
 header {
     display: flex;
@@ -97,50 +98,12 @@ form button:hover {
     color: var(--bg-color);
 }
 
-.d-flex {
-    
-    background-color: var(--checkbox-color);
-    border-radius: 3px;
-    padding: 9px;
-    width: 9rem;
-    margin-left: 10vh;
-    display: inline-flex;
-    justify-content: space-between;
-    
-}
+
 
 input[type="checkbox"] {
     border: 1px solid white;
     cursor: pointer;
     
-}
-
-.d-flex input{
-  display: none;
-}
-
-
-
-.d-flex input + label:before {
-  content: '';
-  width: 18px;
-  height: 18px;
-  border-radius: 4px;
-  background-color: white;
-  border: 1px solid gray;
-  display: inline-block;
-  vertical-align: middle;
-  margin-right: 8px;
-  margin-bottom: 3px;
- 
-}
-
-.d-flex input:checked + label:before {
-  background-image: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='100' viewBox='0 0 10 10'%3E%3Cg class='nc-icon-wrapper' stroke-width='1' fill='%23555555'%3E%3Cpath fill='none' stroke='%23FFFFFF' stroke-linecap='round' stroke-linejoin='round' stroke-miterlimit='10' data-cap='butt' d='M2.83 4.72l1.58 1.58 2.83-2.83'/%3E%3C/g%3E%3C/svg%3E");
-  background-color: rgba(86, 27, 141, 0.822);
-  background-position: center;
-  border: none;
-  padding: 1px;
 }
 
 .fa-message{
@@ -152,13 +115,13 @@ input[type="checkbox"] {
 }
 
 .conv{
-    padding: 10px 20px;
-    border-radius: 5px;
-    background-color: rgb(131, 69, 189);
-    color: var(--txt-color);
-    border: 1px solid;
+    margin: 5vh;
+    background-color: var(--box-color);
     cursor: pointer;
-    position: relative;
+    border-radius: 7px;
+    width: auto;
+    padding: 5vh 5vh;
+    color: white;
 }
 
 .conv:hover{
@@ -270,9 +233,31 @@ label#check:hover{
     cursor: pointer;
 }
 
-@media only screen and (min-width: 1400px) {
-    .lista{
-        margin-left: -2vh;
-    }
+.card{
+   left: 5rem;
+    background-color: var(--bg-color);
+    margin: 5vh;
 }
+
+.btn{
+    background-color: var(--bg-color-button);
+    border: var(--bg-color-body);
+    padding: 2vh;
+}
+
+.btn:hover{
+    background-color: var(--bg-color-hover);
+    transition: 0.5s;
+}
+
+.btn-primary:active{
+    background-color: #2f1e65;
+}
+
+
+
+
+
+
+
 
