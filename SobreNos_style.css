@@ -150,6 +150,9 @@ label#check:hover{
     cursor: pointer;
 }
 
+.actived{background-color: #453180;}
+
+
 @media only screen and (min-width: 1200px) {
     .caixa{
        margin-top: 10vh;

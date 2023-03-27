@@ -11,6 +11,8 @@
     --border-color: white;
     --bg-color-hover: #7a57db;
     --bg-color-active: #6245b8;
+    --bg-color-button: #9584FA;
+
 }
 
 body{
@@ -112,4 +114,31 @@ input[type="button"]:active, #sair:active {
 .nomeUsuario{color: #FFF;}
 
 .list-group-item{color: #fff;}
+
+.imagem-projeto:hover {
+    opacity: 0.8;
+}
+
+.modal-content{background-color: #f5f5f5;}
+
+.modal .btn-close:focus{
+    border-color: #8a2be2;
+    box-shadow: 0 0 0 0.18rem var(--bg-color-button)
+}
+
+  .modal .btn-close:active, .modal .btn-close:hover{
+    background-color: var(--bg-color-button);
+}
+
+textarea{resize: none;}
+
+
+.fotoProjeto:hover{
+    opacity: 0.8;
+}
+
+a{text-decoration: none;}
+
+
+
 
