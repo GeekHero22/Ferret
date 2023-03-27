@@ -132,9 +132,12 @@ input[type="button"]:active, #sair:active {
 
 textarea{resize: none;}
 
+.membroEquipe:hover{
+    opacity: 0.8;
+}
 
 .fotoProjeto:hover{
-    opacity: 0.8;
+   
 }
 
 a{text-decoration: none;}
