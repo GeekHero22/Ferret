@@ -18,6 +18,8 @@
     --txt-color: #e9e9e9;
 }
 
+
+
 body{
     background-color: #e9e9e9;  
 }
@@ -107,6 +109,7 @@ button:active{
     transition: 0.3s;
 }
 
+/*Barra de navegação COMEÇO*/
 .sidebar{
     position: fixed;
     width: 250px;
@@ -218,6 +221,7 @@ label#check:hover{
 #buttonNoti{
     padding-top: 0;
 }
+/*Barra de navegação FIM*/
 
 .actived{background-color: #453180;}
 
