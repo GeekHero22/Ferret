@@ -31,8 +31,7 @@ h1{
 
 
 .caixa{
-   margin-left: 13vh;
-   margin-right: 3vh; 
+   margin: 0 auto;
    font-size: 18px;
    text-align: justify;
    line-height: 1.7rem;

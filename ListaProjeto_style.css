@@ -61,8 +61,11 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: var(--bg-color);
     padding: 1em;
+}
+
+.bg-color{   background-color: var(--bg-color);
+    width: 100%;
 }
 
 

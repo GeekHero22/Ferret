@@ -7,130 +7,57 @@
 hr{border-color: black;}
 
 :root{
-    --bg-color-caixa-create: #e9e9e9;
+    --bg-color-caixa-create: #f5f5f5;
     --bg-color-body: #2f1e65;
     --bg-color-submit: #7652da;
     --bg-color-submit-hover: #732fc2;
     --bg-color-submit-active: #56168a;
     --txt-color: #fff;
     --border-color: #000;
+    --bg-color-button: #9584FA;
+    --bg-color-submit-button-hover: #7652da;
+    --bg-color-submit-button-active: #453180;
     --border-focus: #7652da;
     --bg-color-caixa: #6c4dcf;
     --bg-color-body: #2f1e65;
     --bg-color-submit: #8b6af7;
     --bg-color-hover: #8b6edb;
     --txt-color: #e9e9e9;
-    
-
     --bg-color-nav: #6c4dcf;
     --hr-color: rgb(87, 0, 128);
     --bg-color-nav-hover: #35265f;
 }
 
-
-body .container{
+body{
     background-color: var(--bg-color-body);
+}
+
+hr{border: 1px solid var(--hr-color);
+    font-weight: 600;
+}
+
+main{
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 
-h2{
-    text-align: center;
-}
-
-.caixa{
-    background-color: var(--bg-color-caixa-create);
-    margin: 5vh;
-    border: 3px solid;
-    padding: 30px;
-    text-align: left;
-    position: relative;
-    width: 55vh;
-    height: 100%;
-    border-radius: 20px;
-}
-
-b{  
-    font-size: 15px;
-}
-
-input[type="text"]{
-    width: 100%;
-    height: 1.6rem;
-    border-radius: 5px;
-    text-indent: 6px;
-    border: 2px solid var(--border-color);
+.container{
     display: block;
+}
+
+.box{
     
-}
-
-input[type="date"]{
-    border: 2px solid var(--border-color);
-    cursor: pointer;
-    display: inline-block;
-}
-
-#duracaoProj{
-    border: 2px solid var(--border-color);
-    cursor: pointer;
-    display: inline-block;
-    width: 35%;
-}
-
-
-textarea{
-    width: 100%;
-    border-radius: 5px;
-    text-indent: 6px;
-    border: 2px solid var(--border-color);
-}
-
-::placeholder{
-    text-indent: 6px;
-    color: rgb(146, 146, 146);
-}
-
-hr{
-    border: 1px solid;
-    color: #9584FA;
-}
-
-#quantMembros{
-    width: 11%;
-    border: 2px solid var(--border-color);
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-input[type="submit"]{
-    height: auto;
-    padding: 14px;
-    width: 100%;
-    text-align: center;
-    border-radius: 7px;
-    cursor: pointer;
+    background-color: var(--bg-color-caixa-create);
     margin: 0 auto;
-    background-color: #7652da;
-    color: var(--txt-color);
+    padding: 2.5rem;
+    border-radius: 3vh;
 }
 
-input[type="text"]:focus,input[type="date"]:focus, textarea:focus, #quantMembros:focus, #duracaoProj:focus{
-    outline: none;
-    border: 2px solid var(--border-focus);
-    transition: 0.3s;
-}
+textarea{resize: none;}
 
-input[type="submit"]:hover{
-    background-color: var(--bg-color-submit-hover);
-    transition: 0.5s;
-}
 
-input[type="submit"]:active{
-    background-color: var(--bg-color-submit-active);
-}
-
+ 
 /*Barra de navegação COMEÇO*/
 .sidebar{
     position: fixed;
@@ -281,7 +208,7 @@ label#check:hover{
 .modal select:focus,
 .modal textarea:focus {
   border-color: #8a2be2;
-  box-shadow: 0 0 0 0.18rem var(--bg-color-button)
+  box-shadow: 0 0 0 0.18rem var(--bg-color-button);
 }
 
 .btn-secondary{
@@ -312,4 +239,9 @@ label#check:hover{
 .btn-primary:active{
     background-color: var(--bg-color-submit-button-active) !important;
     transition: 0.5s;
+}
+
+.form-control:focus, .form-select:focus{
+  border-color: #8a2be2;
+  box-shadow: 0 0 0 0.18rem var(--bg-color-button)
 }
