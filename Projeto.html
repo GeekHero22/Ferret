@@ -34,40 +34,47 @@
         <a class="itens" href="#" class="exitBottom"><i class="fa-solid fa-door-open"></i><span>Sair</span></a>
     </div>
    
-    <main>
-       <div class="imagem-projeto">
+    <main class="container ">
+       <div class="imagem-projeto img-fluid mx-auto" height="2" width="15">
         <img src="bird-game.jpg" alt="ícone do projeto" >
        </div>
-       <h2>Bird-game</h2>
+       <h4>Bird-game</h4><br><br>
 
 
-
-
-       <p class="informacoes">Data prevista de término: 6 a 9 meses</p>
-       <p class="informacoes">Data de início: 10/12/2022</p>
-       <p id="qndMembro" class="informacoes">Quantidade de membros: 3</p>
-
-       <div class="descricao">
-        <h3>Nome de usuário do criador: @user123</h3><br>
-        <h4>Descrição: Bird-game é um jogo no qual eu estou pensando em desenvolver
+       <div class="descricao w-75">
+        <p class="informacoes" id="desc">Bird-game é um jogo no qual eu estou pensando em desenvolver
             para celulares em que a mecânica do game consiste em fugir de um pardal
             que está te seguindo pelos ares. Para que esse projeto possa se tornar realidade,
             eu necessito de desenvolvedores Java e de designers profissionais para poderem me
-            ajudarem nesse objetivo. Se você tiver interesse, mande seu convite para que eu
-            possa analisar o seu perfil e, assim, avaliar se eu posso contar com você para 
-            ingressar na minha equipe.</h4>
-            
-       </div>
+            ajudarem nesse objetivo.
+            </p><br>
 
+            <div class="informacoes2 text-center">
+       <p class="informacoes">Data de início: 10/12/2023</p>
+       <p class="informacoes">Data prevista de término: 6 a 9 meses</p>
+       <p id="qndMembro" class="informacoes">Quantidade de membros: 2</p>
+      </div>
+      </div><br><br><br><br>
 
-       <form action="#">
-       <input type="button" class="backup" onclick="adicionar()" value="Adicionar Backup"></input><input type="text" id="add" placeholder="Adicionar link">
-                
-                <ul id="lista">            
-                    
-                </ul>
-            </ul>
-        </form>
+      <div class="row">
+      <div class="mensagens w-50 p-3 mb-2">
+        <div class="mb-3 position-relative">
+          <label for="exampleFormControlTextarea1" class="form-label text-center">
+            <p class="text-white">Mensagens</p>
+          </label>
+          <textarea class="form-control w-50" id="exampleFormControlTextarea1" rows="7"></textarea>
+          <i class="fa-solid fa-plus position-absolute top-50 end-0 translate-middle-y" id="i_icon_plus"></i>
+        </div>
+      </div>
+
+      <div class="grupoBotoes col-2"><br><br>
+        <input class="btn btn-primary" id="input_button1" type="button" value="Membros">
+        <input class="btn btn-primary" id="input_button2" type="button" value="Tela de gráficos">
+        <input class="btn btn-primary" id="input_button3" type="button" value="Visualizar o kanban">
+      </div>
+    </div>
+
+      
     </main>
 
     <!-- Modal -->
