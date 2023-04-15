@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="Projeto_style.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="Furão da Neve.jpg" type="image/x-icon">
+
     <title>Ferret</title>
     <script src="Projeto_script.js"></script>
 </head>
@@ -57,25 +59,106 @@
       </div><br><br><br><br>
 
       <div class="row">
-      <div class="mensagens w-50 p-3 mb-2">
+      <div class="mensagens w-50 p-4 pe-5">
         <div class="mb-3 position-relative">
           <label for="exampleFormControlTextarea1" class="form-label text-center">
             <p class="text-white">Mensagens</p>
           </label>
-          <textarea class="form-control w-50" id="exampleFormControlTextarea1" rows="7"></textarea>
-          <i class="fa-solid fa-plus position-absolute top-50 end-0 translate-middle-y" id="i_icon_plus"></i>
+        
+          <textarea class="form-control w-75" id="exampleFormControlTextarea1" rows="7"></textarea>
+          <i class="fa-solid fa-plus border border-4 border-dark position-absolute top-50 end-0 translate-middle-y" id="i_icon_plus"></i>
+       
         </div>
       </div>
 
       <div class="grupoBotoes col-2"><br><br>
-        <input class="btn btn-primary" id="input_button1" type="button" value="Membros">
-        <input class="btn btn-primary" id="input_button2" type="button" value="Tela de gráficos">
+        <input class="btn btn-primary" id="input_button1" type="button" value="Membros" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+          <div class="offcanvas-header">
+            <h3 class="offcanvas-title" id="offcanvasRightLabel">Membros</h3>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <div class="membros container-fluid">
+              <ul class="list-group">
+                 
+                  <li class="list-group-item ">
+                      <img src="Furão da Neve.jpg" class="fotoPerfil img-fluid" alt="Foto de perfil" height="70" width="65">
+                      Guilherme Silva (Administrador)
+                  </li><br>
+
+                  <li class="list-group-item ">
+                  <a data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1" class="membroEquipe text-decoration-none text-white">
+                      <img src="Furão da Neve.jpg" class="fotoPerfil img-fluid mx-auto" alt="Foto de perfil" height="70" width="65">
+                      Lucas Ferreira
+                  </a>
+                      <button class="btn-primary p-2 mt-3 mb-3" id="excluir">Excluir</button>
+                  </li><br>
+
+                  <!--Collapse-->
+                  <div class="collapse multi-collapse" id="multiCollapseExample1">
+                    <div class="card card-body mb-3">
+                      <img src="Furão da Neve.jpg" alt="foto de perfil" style="height: 13vh; border-radius: 100vh;" class="img-fluid mx-auto d-block"><br>
+                        <div class="input-group mb-3">
+                            <label for="altNome">Nome<br><input class="altNome form-control w-100 h-50" type="text" placeholder="Nome" value="Lucas Ferreira" disabled></label><br><br><br>
+                            <label for="altNomeUsuario">Nome de usuário<br><input class="altNomeUsuario form-control w-100 h-50" type="text" placeholder="Nome de usuário" value="lucas_ferreira" disabled></label><br><br><br>
+                            <label for="altBiografia">Biografia<br><textarea class="altBiografia form-control h-75" id="floatingTextarea" disabled>Designer UI e UX</textarea></label><br><br><br><br><br><br>          
+                     </div>
+                    </div>
+                  </div>                           
+                </ul>
+
+                <button type="button" class="btn btn-secondary ms-0 p-2" id="button_adicionar_membro">Adicionar membro</button>
+
+          </div>
+          </div>
+        </div>
+        <input class="btn btn-primary" onclick="window.location.href='Criar-Graficos.html'" id="input_button2" type="button" value="Tela de gráficos">
         <input class="btn btn-primary" id="input_button3" type="button" value="Visualizar o kanban">
       </div>
-    </div>
+
+        <!--Kanban-->
+        <div class="board m-5 ms-5 pt-3 d-none"><br><br>
+          
+          <form id="todo-form" class="d-flex justify-content-center">
+            <input type="text" class="ms-4" placeholder="Nova tarefa a fazer" id="todo-input"/>
+            <button type="submit" class="btn btn-secondary ms-5">Adicionar tarefa</button>
+          </form><br>
+
+
+          <div class="lanes d-sm-block d-md-flex justify-content-md-center pe-5 ps-5 me-5 ms-5">
+            
+         
+            <div class="swim-lane col-4 col-sm-4 mt-sm-2" id="todo-lane">
+              <h3 class="heading pt-2 pb-2">Fazer</h3>
+    
+              
+            </div>
+    
+            <div class="swim-lane col-4 col-sm-4 mt-sm-2">
+              <h3 class="heading pt-2 pb-2">Fazendo</h3>
+    
+            </div>
+    
+            <div class="swim-lane col-4 col-sm-4 mt-sm-2">
+              <h3 class="heading pt-2 pb-2">Feito</h3>
+            </div>
+
+          </div>
+          
+          <div class="text-end mt-3">
+            <button class="btn btn-primary ms-5" id="descartar">Descartar alterações</button>
+            <button class="btn btn-primary" id="salvar">Salvar alterações</button>
+          </div>
+        </div>
+        </div>
+     
 
       
     </main>
+   
+   
+    
 
     <!-- Modal -->
   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -114,5 +197,8 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="Projeto_script.js"></script>
+
+   
 </body>
 </html>
