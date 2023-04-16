@@ -32,40 +32,20 @@
     <label for="check" id="check"><i class="fa-solid fa-bars"></i></label>
     <div class="sidebar">
       <center>
+
         <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">
-          <img src="Furão da Neve.jpg" class="image" alt="Logo do Ferret" />
+          <img src="Furão da Neve.jpg" class="image" alt="Logo do Ferret">
         </a>
-        <h2>Usuário</h2>
+          <h2>Usuário</h2>
       </center>
-      <a class="itens" href="TelaPrincipal.html"
-        ><i class="fa-solid fa-house"></i><span class="span1">Início</span></a
-      >
-      <a class="itens" href="CriarProjeto.html"
-        ><i class="fa-solid fa-circle-plus"></i><span>Criar projeto</span></a
-      >
-      <a class="itens"
-        ><i class="fa-solid fa-bell"></i><span> Notificação</span></a
-      >
-      <a
-        class="itens"
-        href="#"
-        data-bs-toggle="modal"
-        data-bs-target="#exampleModal"
-        ><i class="fa-solid fa-user"></i><span> Perfil</span></a
-      >
-      
-        <a class="itens" href="ListaProjeto.html"
-          ><i class="fa-solid fa-rectangle-list"></i
-          ><span>Lista de projeto</span></a
-        >
-      
-      <a class="itens" href="SobreNos.html"
-        ><i class="fa-solid fa-user-group"></i><span>Sobre nós</span></a
-      >
-      <a class="itens" href="#" class="exitBottom"
-        ><i class="fa-solid fa-door-open"></i><span>Sair</span></a
-      >
-    </div>
+     <a class="itens" href="TelaPrincipal.html"><i class="fa-solid fa-house"></i><span class="span1">Início</span></a>
+     <a class="itens" href="CriarProjeto.html"><i class="fa-solid fa-circle-plus"></i><span>Criar projeto</span></a>
+      <a class="itens"><i class="fa-solid fa-bell"></i><span> Notificação</span></a>   
+      <a class="itens" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-user"></i><span> Perfil</span></a>
+      <a class="itens" href="ListaProjeto.html"><i class="fa-solid fa-rectangle-list"></i><span>Lista de projeto</span></a>
+      <a class="itens" href="SobreNos.html"><i class="fa-solid fa-user-group"></i><span>Sobre nós</span></a>
+      <a class="itens" href="#" class="exitBottom"><i class="fa-solid fa-door-open"></i><span>Sair</span></a>
+  </div>
     <div class="container">
     <div class="escolhas">
       <!--Botões de escolha e preenchimento de informações-->
@@ -92,6 +72,41 @@
       
     </div>
   </div>
+
+     <!-- Modal -->
+     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5 text-start" id="exampleModalLabel">Perfil</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+  
+          <div class="modal-body">
+              <img src="Furão da Neve.jpg" alt="foto de perfil" style="height: 13vh; border-radius: 100vh;" class="img-fluid justify-content-center"><br>
+              <div class="mb-3">
+                  <div class="input-group mb-3">
+                      <label for="altNome">Nome<br><input class="altNome form-control w-100 h-50" type="text" placeholder="Nome"></label><br><br><br>
+                      <label for="altNomeUsuario">Nome de usuário<br><input class="altNomeUsuario form-control w-100 h-50" type="text" placeholder="Nome de usuário"></label><br><br><br>
+                      <label for="altBiografia">Biografia<br><textarea class="altBiografia form-control h-75" id="floatingTextarea"></textarea></label><br><br><br><br><br><br>
+                      <label for="altEmail">Email <br> <input type="email" class="altEmail form-control" id="floatingInput" placeholder="nome@exemplo.com"></label><br><br><br>  
+                      <label for="altSenha">Senha <br> <input type="password" class="form-control" id="floatingPassword" placeholder="Senha"></label><br><br><br>
+                      <label for="altTelefone">Telefone <br> <input type="tel" class="altTelefone form-control" id="floatingTel" placeholder="Telefone" pattern="[0-9]{10,11}"></label><br><br><br></label>
+                  </div>
+                
+               
+                <label for="formFileSm" class="form-label">Atualizar foto de perfil</label>
+              <input class="form-control form-control-sm w-auto" id="formFileSm" type="file"><br>
+          </div>
+  
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary">Editar Perfil</button>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Salvar configurações</button>
+            
+          </div>
+        </div>
+      </div>
+    </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 
