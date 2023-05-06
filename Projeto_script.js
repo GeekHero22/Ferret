@@ -1,12 +1,8 @@
 {
-// Obtém o elemento do formulário por ID
-const form = document.getElementById("todo-form");
 
-// Obtém o elemento de entrada de texto por ID
-const input = document.getElementById("todo-input");
-
-// Obtém o elemento da coluna "A fazer" por ID
-const todoLane = document.getElementById("todo-lane");
+const form = document.getElementById("todo-form"); // Obtém o elemento do formulário por ID
+const input = document.getElementById("todo-input");// Obtém o elemento de entrada de texto por ID
+const todoLane = document.getElementById("todo-lane"); // Obtém o elemento da coluna "A fazer" por ID
 
 // Adiciona um ouvinte de evento para o evento de envio do formulário
 form.addEventListener("submit", (e) => {
@@ -114,7 +110,6 @@ var inputButton3 = document.getElementById('input_button3');
 inputButton3.addEventListener('click', function() {
   // Obtém o elemento do kanban por classe
   var kanban = document.querySelector('.board');
-
   // Remove a classe "d-none" para exibir o kanban
   kanban.classList.remove('d-none');
   inputButton3.classList.add('d-none'); // Adiciona a classe 'd-none' para remover o botão

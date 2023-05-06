@@ -66,8 +66,6 @@ hr{
 
 }
 
-
-
 .sidebar .itens:hover {
     background-color: var(--bg-color-nav-hover);
     transition: 0.3s;
@@ -284,8 +282,7 @@ p{
     text-align: center;
 }
 
-#input_button1, #input_button2, #input_button3 {
-    
+#input_button1, #input_button2, #input_button3, #input_button4 {   
     margin: 1vh;
     background-color: var(--bg-color-button);
     padding: 1rem;
@@ -298,20 +295,15 @@ p{
     float: right;
 }
 
-#input_button1:hover, #input_button2:hover, #input_button3:hover{
+#input_button1:hover, #input_button2:hover, #input_button3:hover, #input_button4:hover{
     background-color: var(--bg-color-submit-button-hover);
     transition: 0.7s;
 }
 
-#input_button1:active, #input_button2:active, #input_button3:active{
+#input_button1:active, #input_button2:active, #input_button3:active, #input_button4:active {
     background-color: var(--bg-color-submit-button-active);
     transition: 0.5s;
 }
-
-
-
-
-
 
 .fotoPerfil{border-radius: 50vh;}
 
@@ -344,8 +336,6 @@ p{
 
 .list-group-item{color: #fff;}
 
-
-
 .modal-content{background-color: #f5f5f5;}
 
 .modal .btn-close:focus{
@@ -365,14 +355,10 @@ textarea{resize: none;}
 
 a:hover{cursor: pointer;}
 
-
 .board {
     overflow: scroll;
     position: relative;
-
 }
-
-
 
   #todo-input::placeholder{
     color: rgb(114, 114, 114);
@@ -380,29 +366,19 @@ a:hover{cursor: pointer;}
   
   #todo-form input {
     padding: 12px;
-    width: 225px;
-  
+    width: 225px;  
     border-radius: 4px;
-    border: none;
-  
+    border: none;  
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
-    background: white;
-  
+    background: white; 
     font-size: 14px;
-    outline: none;
-
-    
-  }
-  
+    outline: none;   
+  } 
   #todo-form button {
-    padding: 12px 32px;
-  
+    padding: 12px 32px; 
     border-radius: 6px;
-    border: none;
-  
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
-    
-  
+    border: none; 
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25); 
     font-weight: bold;
     font-size: 16px;
     cursor: pointer;
@@ -422,13 +398,9 @@ a:hover{cursor: pointer;}
     border-top: 40px solid var(--bg-color-button);
     border-left: 18px solid var(--bg-color-button);
     border-right: 18px solid var(--bg-color-button);
-    border-bottom: 50px solid var(--bg-color-button);
-
-    
+    border-bottom: 50px solid var(--bg-color-button);   
   }
 
-  
-  
   .heading {
     font-size: 22px;
     margin-bottom: 8px;
@@ -444,30 +416,20 @@ a:hover{cursor: pointer;}
     gap: 12px;
     left: 0;
     background: #f4f4f4;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
-    
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);   
     border-radius: 7px;
-    min-height: 120px;
-  
-    flex-shrink: 0;
+    min-height: 120px;  
+    flex-shrink: 0;   
+  } 
 
-    
-
-    
-  }
-
-  
   .task {
     background: rgb(199, 199, 199);
     color: #000;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
-  
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15); 
     padding: 12px;
     border-radius: 4px;
-  
     font-size: 16px;
     cursor: move;
-
     margin-left: 6px;
     margin-right: 6px;
     margin-bottom: 6px;
@@ -492,12 +454,12 @@ a:hover{cursor: pointer;}
     margin-bottom: 5px; /* Adiciona um espaçamento inferior para os botões não ficarem colados à borda da div */
     margin-right: 80px; /* Adiciona um espaçamento direito para os botões não ficarem colados à borda da div */
   }
-  
+
   .text-end button {
     margin-left: 5px; /* Adiciona um espaçamento à esquerda para separar os botões */
   }
 
-  @media (min-width: 992px) {
+@media (min-width: 992px) {
     .board{
         width: 85%;
     }     
@@ -508,9 +470,7 @@ a:hover{cursor: pointer;}
     .swim-lane{
         display: block;
         width: 70%;
-    }
-
-    
+    }    
 }
  
 

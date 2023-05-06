@@ -395,10 +395,7 @@ label{color: #000;}
     margin-right: auto;
     resize: none;
     width: 50%;
-    border: none;
-    
-    
-    
+    border: none;  
 }
 
 body{background-color: #e9e9e9;}
@@ -412,15 +409,15 @@ body{background-color: #e9e9e9;}
     outline: none;
         
 }
+
 .formulario{
   background-color: rgb(207, 207, 207);
   width: 27%;
   border-radius: 10px;
   text-align: center;
-  margin-right: auto;
-
-  
+  margin-right: auto; 
 }
+
 .concluir{
   background-color: #876cdd;
   color: white;
@@ -434,7 +431,7 @@ body{background-color: #e9e9e9;}
 .container{
   padding: 3%;
   display: grid;
-place-items: center;
+  place-items: center;
 }
 
 .formulario {
