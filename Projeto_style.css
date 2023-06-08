@@ -350,7 +350,7 @@ p{
 textarea{resize: none;}
 
 .membroEquipe:hover{
-    opacity: 0.8;
+    cursor: auto;
 }
 
 a:hover{cursor: pointer;}
